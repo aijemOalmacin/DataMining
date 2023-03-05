@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href="{{url_for('static', filename='style.css')}}">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="  crossorigin="anonymous"></script>
+	<script>
+		function analyzeData() {
+			let speed = $('#speed').val()
+			let type = $('#type').val()
+			let Gender = $('#Gender').val()
+			let beginner = $('#beginner').val()
+			let passenger = $('#passenger').val()
+			$.post('/model-api', {
+				'speed': speed,
+				'type': type,
+				'Gender': Gender,
+				'beginner': beginner,
+				'passenger': passenger
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+
+</head>
+<body>
+<div class="container">
+	<center><h1 id ="title">Determine Driver's Safety</h1></center>
+<div id="dropdowns">
+	<div id="type1">
+		<h3>Type</h3>
+	<select id="type">
+		<option value="yes">Scooter</option>
+		<option value="no">Bike</option>
+	</select>
+		</div>
+
+	<div id="Gender1">
+	<h3>Gender</h3>
+	<select id="Gender">
+		<option value="yes">Male</option>
+		<option value="no">Female </option>
+	</select>
+		</div>
+	<div id="beginner1">
+	<h3>Skill</h3>
+	<select id="beginner">
+		<option value="yes">Beginner</option>
+		<option value="no">Advance </option>
+	</select>
+		</div>
+</div>
+	<div id="inp">
+<input id="speed" placeholder="Enter Speed" type="text" class="form-control" />
+<input id="passenger" placeholder="No. of passenger" type="text" class="form-control" />
+		<div id="result"></div>
+	</div>
+
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn" >Analyze</button>
+	</center>
+	<br />
+
+	<button class = "button" onclick="location.reload();"></button>
+	<center>
+
+	</center>
+
+</div>
+</body>
+</html>

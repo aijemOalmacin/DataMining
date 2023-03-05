@@ -1,0 +1,131 @@
+body{
+    color: black;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    text-align: center;
+}
+#passenger{
+    width:200px;
+    margin-left: 230px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-color: rgba(82, 54, 1, 0.97);
+    color: brown;
+}
+
+#speed{
+    width:200px;
+    margin-left: 230px;
+    text-align: center;
+    margin-top; 50px;
+    margin-bottom: 10px;
+    border-color: rgba(82, 54, 1, 0.97);
+    color: brown;
+}
+#inp{
+    margin-top: 110px;
+}
+
+#result{
+    color:white;
+    background-color: orange;
+    width: 200px;
+    font-size: 20px;
+    font-family: bookman old style;
+    position: absolute;
+    margin-left: 230px;
+    background-color: rgba(82, 54, 1, 0.97);
+      border-radius: 10px;
+      text-shadow: 3px 2px 2px black;
+}
+
+.container{
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    border-style: solid;
+    border-color: rgba(82, 54, 1, 0.97);
+    width: 700px;
+    height: 410px;
+    }
+#type1{
+float:left;
+margin-right: 10px;
+color: rgba(82, 54, 1, 0.97);
+}
+#Gender1{
+float: left;
+margin-right:10px;
+color: rgba(82, 54, 1, 0.97);
+}
+
+#beginner1{
+}
+#type{
+border-color: rgba(82, 54, 1, 0.97);
+height: 30px;
+color: rgba(82, 54, 1, 0.97);
+
+}
+#beginner{
+border-color: rgba(82, 54, 1, 0.97);
+height: 30px;
+float:left;
+color: rgba(82, 54, 1, 0.97);
+}
+#Gender{
+border-color: rgba(82, 54, 1, 0.97);
+height: 30px;
+color: rgba(82, 54, 1, 0.97);
+
+}
+#title{
+    font-family:kristen itc;
+    margin-top:20px;
+    color: brown;
+    color: rgba(82, 54, 1, 0.97);
+    text-shadow: 3px 3px 2px black;
+    font-size: 50px;
+    text-shadow: 1px 2px 1px white;
+
+}
+h3{
+font-family:verdana;
+font-size: 20px;
+float:left;
+margin-right: 10px;
+color: rgba(82, 54, 1, 0.97);
+text-shadow: 1px 1px 1px white;
+}
+#dropdowns{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.button:hover{
+    background-color: rgba(160, 67, 8, 0.8);
+    border-color: rgba(82, 54, 1, 0.97);
+}
+.button{
+     background-image: url('icon2.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100px;
+    background-color: rgba(82, 54, 1, 0.97);
+     width: 50px;
+     height: 50px;
+     float: left;
+
+}
+.btn:hover{
+color: white;
+background-color: rgba(160, 67, 8, 0.8);
+border-color: rgba(82, 54, 1, 0.97);
+}
+.btn{
+    color: white;
+     background-color: rgba(82, 54, 1, 0.97);
+}
